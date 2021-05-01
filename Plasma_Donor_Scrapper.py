@@ -6,7 +6,7 @@ import time
 def scrapper():
     driver = webdriver.Firefox()
     driver.get("https://coronaclusters.in/plasma/donors")
-    # time.sleep(60 )
+    time.sleep(60)
     fields = ['verified', 'location', 'donor', 'blood_group', 'phone_number', 'date_of_negative', 'date_of_positive',
               'registered_on']
     dict_data = []
